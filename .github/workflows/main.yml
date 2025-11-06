@@ -68,4 +68,4 @@ jobs:
       # Push Docker Image
       - name: Push Docker Image
         run: |
-          docker push $bimaindra25/cc:latest
+          docker push bimaindra25/cc:latest
