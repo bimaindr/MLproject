@@ -56,8 +56,8 @@ jobs:
       # Debug Secrets (opsional)
       - name: Debug Secrets
         run: |
-          echo "USERNAME=${{ secrets.DOCKER_HUB_USERNAME }}"
-          echo "TOKEN=${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}"
+          username: bimaindra25
+          password: dckr_pat_fNrA7CjEV7v44q1vlGxyjlXOv5Y
 
       # Login to Docker Hub
       - name: Log in to Docker Hub
