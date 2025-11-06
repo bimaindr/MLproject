@@ -63,15 +63,15 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: bimaindra25
+          password: dckr_pat_fNrA7CjEV7v44q1vlGxyjlXOv5Y
 
       # Tag Docker Image
       - name: Tag Docker Image
         run: |
-          docker tag cc ${{ secrets.DOCKER_HUB_USERNAME }}/cc:latest
+          docker tag cc bimaindra25/cc:latest
 
       # Push Docker Image
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/cc:latest
+          docker push $bimaindra25/cc:latest
