@@ -53,12 +53,6 @@ jobs:
         run: |
           mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "cc" 
 
-      # Debug Secrets (opsional)
-      - name: Debug Secrets
-        run: |
-          username: bimaindra25
-          password: dckr_pat_fNrA7CjEV7v44q1vlGxyjlXOv5Y
-
       # Login to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
